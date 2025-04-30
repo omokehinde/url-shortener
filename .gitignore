@@ -1,0 +1,42 @@
+# Root-level ignores
+node_modules/
+.env
+.DS_Store
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# Ignore OS-specific files
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+
+# Ignore coverage reports
+coverage/
+*.lcov
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore dotenv environment files (common pattern)
+*.env*
+!.env.example
+
+# Backend (Node.js Express)
+backend/node_modules/
+backend/.env
+backend/dist/
+backend/coverage/
+
+# Frontend (React.js)
+frontend/node_modules/
+frontend/.env
+frontend/build/
+frontend/coverage/
