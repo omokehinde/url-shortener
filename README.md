@@ -24,3 +24,8 @@ npm run test
 npm test -- --coverage # Test coverage report
 npm run test:watch 
 ```
+
+## Frontend
+### Run application
+```bash
+npm start
