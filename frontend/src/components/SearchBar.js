@@ -1,21 +1,3 @@
-// import React from 'react';
-
-// const SearchBar = ({ searchQuery, setSearchQuery }) => {
-//   return (
-//     <div className="max-w-2xl mx-auto p-6">
-//       <input
-//         type="text"
-//         value={searchQuery}
-//         onChange={(e) => setSearchQuery(e.target.value)}
-//         placeholder="Search URLs (minimum 3 characters)"
-//         className="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
-//       />
-//     </div>
-//   );
-// };
-
-// export default SearchBar;
-
 import React from 'react';
 import { TextField, Box } from '@mui/material';
 import { Search as SearchIcon } from '@mui/icons-material';
