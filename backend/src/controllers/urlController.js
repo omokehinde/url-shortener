@@ -18,6 +18,8 @@ exports.encode = (req, res) => {
 
   try {
     const result = urlService.encodeUrl(longUrl);
+    console.log(result);
+    
     res.status(201).json({
       shortUrl: `${BASE_URL}/${result.shortCode}`,
       shortCode: result.shortCode,
@@ -72,6 +74,7 @@ exports.list = (req, res) => {
     res.json(results.map(entry => ({
       longUrl: entry.longUrl,
       shortUrl: `${BASE_URL}/${entry.shortCode}`,
+      shortCode: entry.shortCode,
       createdAt: entry.createdAt,
       visits: entry.visits
     })));

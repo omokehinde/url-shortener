@@ -17,6 +17,7 @@ class UrlService {
       createdAt: new Date(),
       visits: 0
     };
+    console.log(shortCode);
     
     this.urls.set(shortCode, newEntry);
     return newEntry;
