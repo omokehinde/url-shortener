@@ -23,6 +23,7 @@ const CreateShortUrl = ({ onUrlCreated }) => {
       setShortUrl(response.data.shortUrl);
       onUrlCreated();
       setError('');
+      setLongUrl(''); // Clear the input field
     } catch (err) {
       setError('Failed to create short URL. Please try again.');
     }

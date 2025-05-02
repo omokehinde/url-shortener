@@ -18,7 +18,7 @@ exports.encode = (req, res) => {
 
   try {
     const result = urlService.encodeUrl(longUrl);
-    console.log(result);
+    // console.log(result);
     
     res.status(201).json({
       shortUrl: `${BASE_URL}/${result.shortCode}`,
